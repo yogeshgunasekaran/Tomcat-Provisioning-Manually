@@ -141,8 +141,23 @@ elasticsearch.node=<enter clusternode name here>
   ```sh
   mvn install 
   ```
+  ### Deploy artifact to tomcat 
   ```sh
-  
+  systemctl stop tomcat
   ```
+  ```sh
+  rm -rf /usr/local/tomcat8/webapps/ROOT*
+  ```
+  ```sh
+  cp <path of artifact(.WAR in target)> /usr/local/tomcat8/webapps/ROOT.war
+  ```
+  ```sh
+  chown -R tomcat.tomcat usr/local/tomcat8/webapps
+  ```
+  ```sh
+  systemctl start tomcat
+  ```
+
+  
   
  
