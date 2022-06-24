@@ -92,5 +92,57 @@ Installation of Tomcat in CentOS7
   ```sh
   firewall-cmd --reload
   ```
+  <br>
+  
+  # To Build and Deploy Maven Artifact (.WAR) in this Tomcat Server
+  ### Download Source code from Github
+  ```sh
+  git clone -b <branch name> <repository link>
+  ```
+  ### Update configuration for Backend Servers in the Project
+  ```sh
+  cd <project directory been cloned>  
+  ```
+  ```sh
+  vi src/main/resources/application.properties
+  ```
+  > Edit this "application.properties" file with all the backend servers details
+~~~
+#JDBC Configutation for Database Connection
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://<enter mysql server ip here>:3306/accounts?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+jdbc.username=<enter mysql user name here>
+jdbc.password=<enter mysql user password here>
+
+#Memcached Configuration For Active and StandBy Host
+#For Active Host
+memcached.active.host=<enter memcached server ip here>
+memcached.active.port=11211
+#For StandBy Host
+memcached.standBy.host=<<enter memcached standBy servers (if any) ip here>
+memcached.standBy.port=11211
+
+#RabbitMq Configuration
+rabbitmq.address=<enter rabbitmq server ip here>
+rabbitmq.port=5672
+rabbitmq.username=<enter rabbitmq user name here>
+rabbitmq.password=<enter rabbitmq user password here>
+
+#Elasticesearch Configuration
+elasticsearch.host =<enter elasticsearch server ip here>
+elasticsearch.port =9300
+elasticsearch.cluster=<enter cluster name here>
+elasticsearch.node=<enter clusternode name here>
+~~~
+ 
+  
+  ### Build code
+  #### Run below command inside the project directory that contains .POM file in it,
+  ```sh
+  mvn install 
+  ```
+  ```sh
+  
+  ```
   
  
