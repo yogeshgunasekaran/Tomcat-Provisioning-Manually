@@ -17,10 +17,7 @@ Installation of Tomcat in CentOS7
   yum install java-1.8.0-openjdk -y
   ```
   ```sh
-  yum install git maven -y
-  ```
-  ```sh
-  yum install wget -y
+  yum install git maven wget -y
   ```
   ### Change dir to /tmp
   ```sh
