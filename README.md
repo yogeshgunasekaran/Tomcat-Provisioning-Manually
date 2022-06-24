@@ -72,6 +72,7 @@ Installation of Tomcat in CentOS7
   ```sh
   systemctl daemon-reload
   ```
+  ### Start & Enable Tomcat
   ```sh
   systemctl start tomcat
   ```
