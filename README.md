@@ -99,7 +99,8 @@ Installation of Tomcat in CentOS7
   ```sh
   git clone -b <branch name> <repository link>
   ```
-  ### Update configuration for Backend Servers in the Project
+  ### Update Configuration for Backend Servers in the Project
+  #### <ins> *Note*</ins>  : This file should be updated before Building the Artifact <br>
   ```sh
   cd <project directory been cloned>  
   ```
