@@ -111,29 +111,29 @@ Installation of Tomcat in CentOS7
 ~~~
 #JDBC Configutation for Database Connection
 jdbc.driverClassName=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://<enter mysql server ip here>:3306/accounts?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
-jdbc.username=<enter mysql user name here>
-jdbc.password=<enter mysql user password here>
+jdbc.url=jdbc:mysql://<mysql-server-ip-here>:3306/accounts?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+jdbc.username=<mysql-user-name-here>
+jdbc.password=<mysql-user-password-here>
 
 #Memcached Configuration For Active and StandBy Host
 #For Active Host
-memcached.active.host=<enter memcached server ip here>
+memcached.active.host=<memcached-server-ip-here>
 memcached.active.port=11211
 #For StandBy Host
-memcached.standBy.host=<<enter memcached standBy servers (if any) ip here>
+memcached.standBy.host=<memcached-standBy-servers(if any)-ip-here>
 memcached.standBy.port=11211
 
 #RabbitMq Configuration
-rabbitmq.address=<enter rabbitmq server ip here>
+rabbitmq.address=<rabbitmq-server-ip-here>
 rabbitmq.port=5672
-rabbitmq.username=<enter rabbitmq user name here>
-rabbitmq.password=<enter rabbitmq user password here>
+rabbitmq.username=<rabbitmq-user-name-here>
+rabbitmq.password=<rabbitmq-user-password-here>
 
 #Elasticesearch Configuration
-elasticsearch.host =<enter elasticsearch server ip here>
+elasticsearch.host =<elasticsearch-server-ip-here>
 elasticsearch.port =9300
-elasticsearch.cluster=<enter cluster name here>
-elasticsearch.node=<enter clusternode name here>
+elasticsearch.cluster=<cluster-here>
+elasticsearch.node=<node-here>
 ~~~
  
   
