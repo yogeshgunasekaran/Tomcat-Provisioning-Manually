@@ -158,7 +158,15 @@ elasticsearch.node=<node-here>
   ```sh
   systemctl start tomcat
   ```
-
   
+  #### <ins> *Note*</ins>  : Updating the Configuration for Backend Servers in Tomcat server (Alternative method)
+  > The ***"applications.properties"*** file can also be updated in ***"/usr/local/tomcat8/webapps/ROOT/WEB-INF/classes/application.properties"*** <br>
+  > This method for tomcat to connect to the backend servers will be helpful, if changing the backend servers details in future.
+  > #### Restart tomcat server
+  > ```sh
+  >  systemctl restart tomcat 
+  >  ```
+  >
+  >
   
  
