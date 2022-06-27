@@ -1,4 +1,4 @@
-# Tomcat-Provisioning-Manually
+# Tomcat Provisioning Manually
 Installation of Tomcat in CentOS7
 ### Login to the root user
  ```sh
